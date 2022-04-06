@@ -25,9 +25,8 @@ class RestaurantTest {
         //WRITE UNIT TEST CASE HERE
         Restaurant restaurant = Mockito.mock(Restaurant.class);
 
-        boolean openingTime = LocalTime.parse("10:30:00").isAfter(LocalTime.parse("09:00:00"));
-         Mockito.when(restaurant.isRestaurantOpen()).thenReturn(openingTime);
-        assertTrue(restaurant.isRestaurantOpen(), String.valueOf(equals(openingTime)));
+        LocalTime currentTime = LocalTime.parse("11:30:00");
+        Mockito.when(restaurant.getCurrentTime()).thenReturn(currentTime);
     }
 
     @Test

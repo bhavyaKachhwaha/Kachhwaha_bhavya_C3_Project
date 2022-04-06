@@ -22,7 +22,7 @@ public class Restaurant {
 
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
 
-        if (LocalTime.now()==openingTime){
+        if (openingTime == getCurrentTime()){
             return true;
         }
         else
