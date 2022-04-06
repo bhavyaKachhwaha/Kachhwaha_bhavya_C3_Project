@@ -70,9 +70,9 @@ class RestaurantTest {
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     @Test
-    public void on_selecting_an_item_from_menu_should_return_total_cost_for_that_item(){
-        restaurant.getTotalCost();
+    public void on_selecting_an_item_from_menu_should_return_total_cost_for_that_item() {
+        int totalCost = restaurant.getTotalCost(119);
 
-        assertEquals(getTotalCost(),restaurant.getMenu());
+        assertEquals(totalCost,restaurant.getMenu());
     }
 }

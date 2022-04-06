@@ -1,4 +1,3 @@
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -78,5 +77,11 @@ public class Restaurant {
         return name;
     }
 
+    public int getTotalCost(int price) {
+        for(Item item: menu){
+            return item.getPrice();
+        }
+       return price;
+    }
 }
 
