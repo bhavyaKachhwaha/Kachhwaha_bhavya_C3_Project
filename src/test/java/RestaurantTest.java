@@ -68,4 +68,11 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void on_selecting_an_item_from_menu_should_return_total_cost_for_that_item(){
+        restaurant.getTotalCost();
+
+        assertEquals(getTotalCost(),restaurant.getMenu());
+    }
 }
