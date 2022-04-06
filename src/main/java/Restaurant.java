@@ -78,5 +78,8 @@ public class Restaurant {
         return name;
     }
 
+    public void getTotalCost() {
+
+    }
 }
 
